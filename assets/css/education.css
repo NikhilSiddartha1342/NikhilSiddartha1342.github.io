@@ -1,0 +1,738 @@
+@import url(./style.css);
+
+/* Dark and Light theme */
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+html[light-mode="light"] {
+  --bg1-color: white;
+  --shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  --border: 1px solid #ecf0f3;
+  --meta-col: #444;
+  --head-col: black;
+  --tint-col: #ecf0f3;
+}
+
+html[light-mode="dark"] {
+  --bg1-color: #272727;
+  --shadow: 0 4px 8px 0 rgba(104, 102, 102, 0.2);
+  --border: none;
+  --meta-col: rgb(155, 149, 149);
+  --head-col: #fff;
+  --tint-col: #ecf0f3be;
+}
+
+html {
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+}
+
+.education_head {
+  font-weight: bold;
+}
+
+/*color of education page heading*/
+
+.edu_background {
+  color: #4e00bb;
+}
+
+/* -----Education Section Responsive Clean----- */
+
+@media (max-width: 767px) {
+  .dropdown1,
+  .dropdown2,
+  .godown {
+    position: static;
+    text-align: center;
+    padding: 0;
+  }
+  .edSection {
+    margin-top: 20px;
+  }
+}
+
+.sect {
+  height: auto;
+  max-width: 120%;
+  background-size: cover;
+  background-position: center center;
+  object-fit: fill;
+}
+
+.s2 {
+  overflow-x: hidden;
+}
+
+.s2 .head {
+  font-size: 2rem;
+  font-weight: bold;
+} 
+
+/*properties for online accreditaions(MOOCS) heading*/
+
+.h4,
+h4 {
+  font-weight: bold;
+  font-size: 2rem;
+  margin-bottom: 2.5rem;
+}
+
+.s2 h4 {
+  margin-bottom: 1.2rem;
+}
+
+.qual {
+  margin-bottom: 2rem;
+  color: var(--meta-col);
+}
+
+.s2 p {
+  margin-top: -0.5rem;
+  font-weight: 450;
+  font-size: 2.5vh;
+}
+.card {
+  background-color: var(--bg1-color);
+}
+.s2 .card img {
+  height: 90%;
+  width: 90%;
+}
+.s2 .card,
+.s2 img {
+  border-radius: 3rem;
+}
+
+.card .row {
+  color: black;
+}
+.s2 h4,
+p {
+  color: var(--head-col);
+}
+@media only screen and (max-width: 767px) {
+  .edSection {
+    margin-top: 20px;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .edSection {
+    margin-top: 15px;
+  }
+}
+/* Card Hover Effect */
+.mooc-title {
+  color: var(--head-col);
+}
+.content {
+  position: relative;
+  width: 100%;
+  padding: 10px;
+  margin: auto;
+  overflow: hidden;
+  height: 75%;
+}
+.content .content-overlay {
+  background: rgba(0, 0, 0, 0.7);
+  position: absolute;
+  height: 99%;
+  width: 100%;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  opacity: 0;
+  -webkit-transition: all 0.4s ease-in-out 0s;
+  -moz-transition: all 0.4s ease-in-out 0s;
+  transition: all 0.4s ease-in-out 0s;
+}
+.content:hover .content-overlay {
+  opacity: 0.8;
+}
+.content-details {
+  position: absolute;
+  text-align: center;
+  width: 100%;
+  left: 50%;
+  top: 50%;
+  opacity: 0;
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  -webkit-transition: all 0.3s ease-in-out 0s;
+  -moz-transition: all 0.3s ease-in-out 0s;
+  transition: all 0.3s ease-in-out 0s;
+}
+.content:hover .content-details {
+  left: 50%;
+  top: 50%;
+  opacity: 1;
+  transition: 0.3s ease-in;
+}
+.fadeIn-bottom {
+  top: 80%;
+}
+#mooc .card {
+  border-radius: 5px;
+  background: var(--tint-col);
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.08), 0 0 6px rgba(0, 0, 0, 0.05);
+  transition: 0.3s transform cubic-bezier(0.155, 1.105, 0.295, 1.12),
+    0.3s box-shadow,
+    0.3s -webkit-transform cubic-bezier(0.155, 1.105, 0.295, 1.12);
+  cursor: pointer;
+  display: flex;
+  flex-wrap: wrap;
+}
+#mooc .card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.12), 0 4px 8px rgba(0, 0, 0, 0.06);
+}
+#mooc .card-body {
+  background-color: var(--bg1-color);
+  padding: 1px;
+}
+/* SVG animation */
+#Girl {
+  animation: swing ease-in-out 1s infinite alternate;
+  transform-origin: center -20px;
+  transform-box: fill-box;
+  float: left;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+}
+@keyframes swing {
+  0% {
+    transform: rotate(9deg);
+  }
+  100% {
+    transform: rotate(-9deg);
+  }
+}
+#Vector_38 {
+  animation: swing ease-in-out 1s infinite alternate;
+  transform-origin: center 0px;
+  transform-box: fill-box;
+  float: left;
+}
+#Vector_39 {
+  animation: swing ease-in-out 1s infinite alternate;
+  transform-origin: center 0px;
+  transform-box: fill-box;
+  float: left;
+}
+#Vector_40 {
+  animation: swing ease-in-out 1s infinite alternate;
+  transform-origin: center -20px;
+  transform-box: fill-box;
+  float: left;
+}
+#leaf12 {
+  -webkit-animation: shake-bottom 9s cubic-bezier(0.455, 0.03, 0.515, 0.955)
+    infinite both;
+  animation: shake-bottom 9s cubic-bezier(0.455, 0.03, 0.515, 0.955) infinite
+    both;
+  transform-box: fill-box;
+}
+#leaf13 {
+  -webkit-animation: shake-bottom 8s cubic-bezier(0.455, 0.03, 0.515, 0.955)
+    infinite both;
+  animation: shake-bottom 8s cubic-bezier(0.455, 0.03, 0.515, 0.955) infinite
+    both;
+  transform-box: fill-box;
+}
+#lef14 {
+  -webkit-animation: shake-bottom 7.5s cubic-bezier(0.455, 0.03, 0.515, 0.955)
+    infinite both;
+  animation: shake-bottom 7.5s cubic-bezier(0.455, 0.03, 0.515, 0.955) infinite
+    both;
+  transform-box: fill-box;
+}
+#leaf15 {
+  -webkit-animation: shake-bottom 7s cubic-bezier(0.455, 0.03, 0.515, 0.955)
+    infinite both;
+  animation: shake-bottom 7s cubic-bezier(0.455, 0.03, 0.515, 0.955) infinite
+    both;
+  transform-box: fill-box;
+}
+#leaf16 {
+  -webkit-animation: shake-bottom 6.5s cubic-bezier(0.455, 0.03, 0.515, 0.955)
+    infinite both;
+  animation: shake-bottom 6.5s cubic-bezier(0.455, 0.03, 0.515, 0.955) infinite
+    both;
+  transform-box: fill-box;
+}
+#leaf17 {
+  animation: shake-bottom 6s cubic-bezier(0.455, 0.03, 0.515, 0.955) infinite
+    both;
+  transform-box: fill-box;
+}
+@-webkit-keyframes shake-bottom {
+  0%,
+  100% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+    -webkit-transform-origin: 50% 100%;
+    transform-origin: 50% 100%;
+  }
+  10% {
+    -webkit-transform: rotate(2deg);
+    transform: rotate(2deg);
+  }
+  20%,
+  40%,
+  60% {
+    -webkit-transform: rotate(-4deg);
+    transform: rotate(-4deg);
+  }
+  30%,
+  50%,
+  70% {
+    -webkit-transform: rotate(4deg);
+    transform: rotate(4deg);
+  }
+  80% {
+    -webkit-transform: rotate(-2deg);
+    transform: rotate(-2deg);
+  }
+  90% {
+    -webkit-transform: rotate(2deg);
+    transform: rotate(2deg);
+  }
+}
+@keyframes shake-bottom {
+  0%,
+  100% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+    -webkit-transform-origin: 50% 100%;
+    transform-origin: 50% 100%;
+  }
+  10% {
+    -webkit-transform: rotate(2deg);
+    transform: rotate(2deg);
+  }
+  20%,
+  40%,
+  60% {
+    -webkit-transform: rotate(-4deg);
+    transform: rotate(-4deg);
+  }
+  30%,
+  50%,
+  70% {
+    -webkit-transform: rotate(4deg);
+    transform: rotate(4deg);
+  }
+  80% {
+    -webkit-transform: rotate(-2deg);
+    transform: rotate(-2deg);
+  }
+  90% {
+    -webkit-transform: rotate(2deg);
+    transform: rotate(2deg);
+  }
+}
+/* ==========================================================================
+   Modern Vertical Education Timeline Component
+   ========================================================================== */
+
+.timeline-section-clean {
+  position: relative;
+  padding: 30px 0 60px 0;
+  width: 100%;
+}
+
+.timeline-wrapper {
+  position: relative;
+  max-width: 950px;
+  margin: 0 auto;
+  padding: 20px 0;
+}
+
+/* Central spine line on desktop */
+.timeline-wrapper::before {
+  content: "";
+  position: absolute;
+  top: 15px;
+  bottom: 15px;
+  left: 36px;
+  width: 3px;
+  background: linear-gradient(180deg, #38bdf8 0%, #6366f1 50%, #f59e0b 100%);
+  border-radius: 4px;
+  z-index: 1;
+}
+
+/* Timeline card row */
+.edu-timeline-card {
+  position: relative;
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 45px;
+  width: 100%;
+}
+
+.edu-timeline-card:last-child {
+  margin-bottom: 0;
+}
+
+/* Icon circular node anchored to vertical spine */
+.edu-card-icon-node {
+  position: relative;
+  z-index: 2;
+  width: 48px;
+  height: 48px;
+  min-width: 48px;
+  border-radius: 50%;
+  background: #0f172a;
+  border: 3px solid #38bdf8;
+  color: #38bdf8;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.25rem;
+  box-shadow: 0 0 0 5px rgba(15, 23, 42, 0.9), 0 0 20px rgba(56, 189, 248, 0.45);
+  margin-left: 14px;
+  margin-top: 12px;
+  transition: all 0.3s ease;
+}
+
+.edu-card-icon-node.node-inter {
+  border-color: #6366f1;
+  color: #818cf8;
+  box-shadow: 0 0 0 5px rgba(15, 23, 42, 0.9), 0 0 20px rgba(99, 102, 241, 0.45);
+}
+
+.edu-card-icon-node.node-ssc {
+  border-color: #f59e0b;
+  color: #fbbf24;
+  box-shadow: 0 0 0 5px rgba(15, 23, 42, 0.9), 0 0 20px rgba(245, 158, 11, 0.45);
+}
+
+.edu-timeline-card:hover .edu-card-icon-node {
+  transform: scale(1.12);
+}
+
+/* Card content box */
+.edu-card-box {
+  position: relative;
+  flex: 1;
+  margin-left: 30px;
+  background: rgba(15, 23, 42, 0.85);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 16px;
+  padding: 26px 28px;
+  backdrop-filter: blur(12px);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.35);
+  transition: all 0.3s ease;
+  overflow: hidden;
+}
+
+.edu-card-box:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 16px 40px rgba(0, 0, 0, 0.5);
+}
+
+.edu-card-box.border-griet {
+  border-left: 4px solid #38bdf8;
+}
+.edu-card-box.border-griet:hover {
+  border-color: rgba(56, 189, 248, 0.4);
+  border-left-color: #38bdf8;
+  box-shadow: 0 16px 40px rgba(56, 189, 248, 0.15);
+}
+
+.edu-card-box.border-inter {
+  border-left: 4px solid #6366f1;
+}
+.edu-card-box.border-inter:hover {
+  border-color: rgba(99, 102, 241, 0.4);
+  border-left-color: #6366f1;
+  box-shadow: 0 16px 40px rgba(99, 102, 241, 0.15);
+}
+
+.edu-card-box.border-ssc {
+  border-left: 4px solid #f59e0b;
+}
+.edu-card-box.border-ssc:hover {
+  border-color: rgba(245, 158, 11, 0.4);
+  border-left-color: #f59e0b;
+  box-shadow: 0 16px 40px rgba(245, 158, 11, 0.15);
+}
+
+/* Card Header Flex Layout - clean separation, NO OVERLAP */
+.edu-card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  gap: 16px;
+  padding-bottom: 18px;
+  margin-bottom: 18px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.edu-institution-info {
+  flex: 1 1 520px;
+}
+
+.edu-category-tag {
+  display: inline-block;
+  font-size: 0.78rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.8px;
+  padding: 3px 10px;
+  border-radius: 20px;
+  margin-bottom: 10px;
+}
+
+.tag-btech {
+  background: rgba(56, 189, 248, 0.12);
+  color: #38bdf8;
+  border: 1px solid rgba(56, 189, 248, 0.3);
+}
+
+.tag-inter {
+  background: rgba(99, 102, 241, 0.12);
+  color: #a5b4fc;
+  border: 1px solid rgba(99, 102, 241, 0.3);
+}
+
+.tag-ssc {
+  background: rgba(245, 158, 11, 0.12);
+  color: #fcd34d;
+  border: 1px solid rgba(245, 158, 11, 0.3);
+}
+
+.edu-institution-title {
+  color: #f8fafc;
+  font-size: 1.35rem;
+  font-weight: 700;
+  line-height: 1.35;
+  margin: 0 0 6px 0;
+}
+
+.edu-degree-title {
+  color: #94a3b8;
+  font-size: 1.02rem;
+  font-weight: 500;
+  line-height: 1.4;
+  margin: 0 0 10px 0;
+}
+
+.edu-location-meta {
+  color: #cbd5e1;
+  font-size: 0.9rem;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+
+.hometown-tag {
+  color: #38bdf8;
+  font-size: 0.82rem;
+  font-weight: 600;
+  background: rgba(56, 189, 248, 0.1);
+  padding: 2px 8px;
+  border-radius: 4px;
+  border: 1px solid rgba(56, 189, 248, 0.25);
+}
+
+/* Badge + Date Group (always wraps cleanly, never collides) */
+.edu-badge-date-group {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 8px;
+  flex-shrink: 0;
+}
+
+.edu-date-pill {
+  display: inline-flex;
+  align-items: center;
+  font-size: 0.86rem;
+  font-weight: 700;
+  padding: 6px 14px;
+  border-radius: 20px;
+  color: #ffffff;
+  white-space: nowrap;
+}
+
+.date-btech {
+  background: linear-gradient(135deg, #0284c7, #2563eb);
+  box-shadow: 0 4px 12px rgba(2, 132, 199, 0.35);
+}
+
+.date-inter {
+  background: linear-gradient(135deg, #4f46e5, #7c3aed);
+  box-shadow: 0 4px 12px rgba(79, 70, 229, 0.35);
+}
+
+.date-ssc {
+  background: linear-gradient(135deg, #d97706, #ea580c);
+  box-shadow: 0 4px 12px rgba(217, 119, 6, 0.35);
+}
+
+.edu-metric-pill {
+  display: inline-flex;
+  align-items: center;
+  font-size: 0.86rem;
+  font-weight: 600;
+  padding: 5px 12px;
+  border-radius: 8px;
+  white-space: nowrap;
+}
+
+.metric-cgpa {
+  background: rgba(100, 255, 218, 0.12);
+  color: #64ffda;
+  border: 1px solid rgba(100, 255, 218, 0.35);
+}
+
+.metric-marks {
+  background: rgba(56, 189, 248, 0.12);
+  color: #38bdf8;
+  border: 1px solid rgba(56, 189, 248, 0.35);
+}
+
+.metric-eamcet {
+  background: rgba(168, 85, 247, 0.12);
+  color: #c084fc;
+  border: 1px solid rgba(168, 85, 247, 0.35);
+}
+
+.metric-ssc {
+  background: rgba(245, 158, 11, 0.12);
+  color: #fbbf24;
+  border: 1px solid rgba(245, 158, 11, 0.35);
+}
+
+/* Card Body & Bullets */
+.edu-card-body {
+  width: 100%;
+}
+
+.edu-bullets {
+  list-style: none;
+  padding-left: 0;
+  margin: 0;
+  color: #94a3b8;
+  font-size: 0.94rem;
+  line-height: 1.75;
+}
+
+.edu-bullets li {
+  position: relative;
+  padding-left: 22px;
+  margin-bottom: 10px;
+}
+
+.edu-bullets li:last-child {
+  margin-bottom: 0;
+}
+
+.edu-bullets li::before {
+  content: "▹";
+  position: absolute;
+  left: 0;
+  top: 0;
+  color: #38bdf8;
+  font-size: 1.1rem;
+  line-height: 1.6;
+}
+
+.border-inter .edu-bullets li::before {
+  color: #818cf8;
+}
+
+.border-ssc .edu-bullets li::before {
+  color: #f59e0b;
+}
+
+.edu-bullets strong {
+  color: #f1f5f9;
+}
+
+/* Mobile & Tablet Responsive Adjustments */
+@media (max-width: 768px) {
+  .timeline-wrapper::before {
+    left: 22px;
+  }
+
+  .edu-card-icon-node {
+    width: 38px;
+    height: 38px;
+    min-width: 38px;
+    font-size: 1rem;
+    margin-left: 4px;
+    margin-top: 6px;
+  }
+
+  .edu-card-box {
+    margin-left: 16px;
+    padding: 18px 16px;
+    border-radius: 12px;
+  }
+
+  .edu-card-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 12px;
+    padding-bottom: 14px;
+    margin-bottom: 14px;
+  }
+
+  .edu-institution-info {
+    flex: 1 1 100%;
+  }
+
+  .edu-badge-date-group {
+    align-items: flex-start;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 8px;
+    width: 100%;
+  }
+
+  .edu-institution-title {
+    font-size: 1.15rem;
+  }
+
+  .edu-degree-title {
+    font-size: 0.95rem;
+  }
+
+  .edu-bullets {
+    font-size: 0.88rem;
+    line-height: 1.65;
+  }
+}
+
+@media (max-width: 480px) {
+  .timeline-wrapper::before {
+    display: none;
+  }
+
+  .edu-timeline-card {
+    flex-direction: column;
+    align-items: stretch;
+    margin-bottom: 30px;
+  }
+
+  .edu-card-icon-node {
+    margin-left: 0;
+    margin-bottom: 10px;
+  }
+
+  .edu-card-box {
+    margin-left: 0;
+    padding: 16px 14px;
+  }
+}
