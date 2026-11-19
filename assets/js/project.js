@@ -189,10 +189,11 @@ const showCards = () => {
       </a>` : ``;
 
     output += `
-      <div class="col-lg-6 col-md-12 mb-4 project-item" data-category="${proj.category}" data-title="${proj.title.toLowerCase()}" data-aos="fade-up" data-aos-delay="${(index % 4) * 100}">
-        <div class="project-card-custom h-100 d-flex flex-column">
+      <div class="col-lg-6 col-md-12 mb-4 project-item tilt-card-wrapper" data-category="${proj.category}" data-title="${proj.title.toLowerCase()}" data-aos="fade-up" data-aos-delay="${(index % 4) * 100}">
+        <div class="interactive-tilt-card h-100 d-flex flex-column">
+          <div class="card-glare"></div>
           <!-- Card Image & Header -->
-          <div class="project-img-container">
+          <div class="card-media-box">
             <img src="${proj.cardImage}" alt="${proj.title} Screenshot" class="project-card-image" loading="lazy">
             <span class="project-badge ${proj.badgeClass}">${proj.badge}</span>
           </div>
@@ -243,42 +244,119 @@ const showCards = () => {
   projectcards.innerHTML = output;
 };
 
-// Modal Details Handler
+// Modal Details Handler with Project-Specific Visual Architecture Pipelines
 window.openProjectModal = function(index) {
   const p = projects[index];
   if (!p) return;
 
+  // Generate project-specific interactive architecture diagram / pipeline
+  let pipelineHtml = "";
+  if (p.id === "awareon") {
+    pipelineHtml = `
+      <div class="pipeline-flow-container">
+        <div class="text-uppercase small font-weight-bold mb-2" style="color: #38bdf8; font-size: 0.78rem; letter-spacing: 0.5px;">
+          <i class="fas fa-project-diagram mr-1"></i> Verified Fatigue Telemetry Pipeline:
+        </div>
+        <div class="pipeline-steps">
+          <div class="pipeline-step"><i class="fas fa-video text-info mb-1 d-block"></i>Camera Feed (30 FPS)</div>
+          <span class="pipeline-arrow"><i class="fas fa-chevron-right"></i></span>
+          <div class="pipeline-step"><i class="fas fa-smile text-info mb-1 d-block"></i>MediaPipe FaceMesh (468 pts)</div>
+          <span class="pipeline-arrow"><i class="fas fa-chevron-right"></i></span>
+          <div class="pipeline-step active-step"><i class="fas fa-calculator text-cyan mb-1 d-block"></i>EAR & MAR Ratios</div>
+          <span class="pipeline-arrow"><i class="fas fa-chevron-right"></i></span>
+          <div class="pipeline-step"><i class="fas fa-chart-line text-warning mb-1 d-block"></i>PERCLOS Scoring</div>
+          <span class="pipeline-arrow"><i class="fas fa-chevron-right"></i></span>
+          <div class="pipeline-step"><i class="fas fa-bell text-danger mb-1 d-block"></i>Multi-Stage Alert</div>
+        </div>
+      </div>`;
+  } else if (p.id === "privastram") {
+    pipelineHtml = `
+      <div class="pipeline-flow-container">
+        <div class="text-uppercase small font-weight-bold mb-2" style="color: #64ffda; font-size: 0.78rem; letter-spacing: 0.5px;">
+          <i class="fas fa-shield-alt mr-1"></i> Multimodal Privacy Processing Pipeline:
+        </div>
+        <div class="pipeline-steps">
+          <div class="pipeline-step"><i class="fas fa-film text-info mb-1 d-block"></i>Video Stream</div>
+          <span class="pipeline-arrow"><i class="fas fa-chevron-right"></i></span>
+          <div class="pipeline-step active-step"><i class="fas fa-user-secret text-info mb-1 d-block"></i>YOLOv8 + MediaPipe</div>
+          <span class="pipeline-arrow"><i class="fas fa-chevron-right"></i></span>
+          <div class="pipeline-step"><i class="fas fa-id-card text-warning mb-1 d-block"></i>EasyOCR PII Extraction</div>
+          <span class="pipeline-arrow"><i class="fas fa-chevron-right"></i></span>
+          <div class="pipeline-step active-step"><i class="fas fa-eye-slash text-cyan mb-1 d-block"></i>Adaptive Mask Blur</div>
+          <span class="pipeline-arrow"><i class="fas fa-chevron-right"></i></span>
+          <div class="pipeline-step"><i class="fas fa-broadcast-tower text-success mb-1 d-block"></i>Sanitized Output</div>
+        </div>
+      </div>`;
+  } else if (p.id === "stress-predictor") {
+    pipelineHtml = `
+      <div class="pipeline-flow-container">
+        <div class="text-uppercase small font-weight-bold mb-2" style="color: #38bdf8; font-size: 0.78rem; letter-spacing: 0.5px;">
+          <i class="fas fa-brain mr-1"></i> Activity-Data-To-Prediction Pipeline:
+        </div>
+        <div class="pipeline-steps">
+          <div class="pipeline-step"><i class="fas fa-user-clock text-info mb-1 d-block"></i>Sleep & Screen Data</div>
+          <span class="pipeline-arrow"><i class="fas fa-chevron-right"></i></span>
+          <div class="pipeline-step"><i class="fas fa-sliders-h text-info mb-1 d-block"></i>StandardScaler Z-Scores</div>
+          <span class="pipeline-arrow"><i class="fas fa-chevron-right"></i></span>
+          <div class="pipeline-step active-step"><i class="fas fa-tree text-success mb-1 d-block"></i>Random Forest ML</div>
+          <span class="pipeline-arrow"><i class="fas fa-chevron-right"></i></span>
+          <div class="pipeline-step"><i class="fas fa-poll text-warning mb-1 d-block"></i>Stress Severity Tier</div>
+          <span class="pipeline-arrow"><i class="fas fa-chevron-right"></i></span>
+          <div class="pipeline-step"><i class="fas fa-robot text-cyan mb-1 d-block"></i>Lyzr AI Guidance</div>
+        </div>
+      </div>`;
+  } else if (p.id === "racan-ai") {
+    pipelineHtml = `
+      <div class="pipeline-flow-container">
+        <div class="text-uppercase small font-weight-bold mb-2" style="color: #38bdf8; font-size: 0.78rem; letter-spacing: 0.5px;">
+          <i class="fas fa-tshirt mr-1"></i> Multimodal Stylist Recommendation Workflow:
+        </div>
+        <div class="pipeline-steps">
+          <div class="pipeline-step"><i class="fas fa-camera-retro text-info mb-1 d-block"></i>User Wardrobe Input</div>
+          <span class="pipeline-arrow"><i class="fas fa-chevron-right"></i></span>
+          <div class="pipeline-step active-step"><i class="fas fa-robot text-cyan mb-1 d-block"></i>Gemini 2.5 Flash Vision</div>
+          <span class="pipeline-arrow"><i class="fas fa-chevron-right"></i></span>
+          <div class="pipeline-step"><i class="fas fa-palette text-warning mb-1 d-block"></i>Color & Style Match</div>
+          <span class="pipeline-arrow"><i class="fas fa-chevron-right"></i></span>
+          <div class="pipeline-step"><i class="fas fa-shopping-bag text-success mb-1 d-block"></i>Ranked Outfit Feed</div>
+        </div>
+      </div>`;
+  }
+
   const modalHtml = `
     <div class="modal fade" id="projectDetailsModal" tabindex="-1" role="dialog" aria-labelledby="projectModalTitle" aria-hidden="true">
       <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
-        <div class="modal-content" style="background: #0f172a; color: #e2e8f0; border: 1px solid rgba(56, 189, 248, 0.3); border-radius: 14px;">
-          <div class="modal-header" style="border-bottom: 1px solid rgba(255, 255, 255, 0.1);">
+        <div class="modal-content" style="background: #090e1a; color: #e2e8f0; border: 1px solid rgba(56, 189, 248, 0.35); border-radius: 16px; box-shadow: 0 25px 50px rgba(0,0,0,0.8);">
+          <div class="modal-header" style="border-bottom: 1px solid rgba(255, 255, 255, 0.08); background: #0c1424; border-top-left-radius: 16px; border-top-right-radius: 16px;">
             <div>
-              <h4 class="modal-title font-weight-bold text-white" id="projectModalTitle">${p.title}</h4>
+              <h4 class="modal-title font-weight-bold text-white mb-1" id="projectModalTitle">${p.title}</h4>
               <p class="text-info small mb-0">${p.tagline}</p>
             </div>
-            <button type="button" class="close text-white" data-dismiss="modal" aria-label="Close" style="outline: none;">
+            <button type="button" class="close text-white" data-dismiss="modal" aria-label="Close" style="outline: none; opacity: 0.8;">
               <span aria-hidden="true">&times;</span>
             </button>
           </div>
-          <div class="modal-body p-4">
-            <img src="${p.cardImage}" alt="${p.title}" class="img-fluid rounded mb-4" style="width: 100%; max-height: 380px; object-fit: cover; border: 1px solid rgba(255, 255, 255, 0.1);">
-            <h5 class="text-white font-weight-bold mb-2">Project Overview</h5>
+          <div class="modal-body p-4" style="background: #070c18;">
+            <img src="${p.cardImage}" alt="${p.title}" class="img-fluid rounded mb-3" style="width: 100%; max-height: 340px; object-fit: cover; border: 1px solid rgba(255, 255, 255, 0.1);">
+            
+            ${pipelineHtml}
+
+            <h5 class="text-white font-weight-bold mb-2 mt-3">Project Overview</h5>
             <p style="color: #cbd5e1; line-height: 1.8;">${p.description}</p>
             
             <h5 class="text-white font-weight-bold mt-4 mb-2">Technology Stack</h5>
             <div class="d-flex flex-wrap mb-4" style="gap: 8px;">
-              ${p.technologies.map(t => `<span class="badge badge-dark" style="background: #1e293b; color: #38bdf8; padding: 7px 12px; font-size: 0.85rem; border-radius: 6px;">${t}</span>`).join("")}
+              ${p.technologies.map(t => `<span class="badge" style="background: #0f172a; color: #38bdf8; border: 1px solid rgba(56, 189, 248, 0.25); padding: 7px 12px; font-size: 0.85rem; border-radius: 6px;">${t}</span>`).join("")}
             </div>
 
-            <h5 class="text-white font-weight-bold mt-3 mb-2">Verified Architecture & Features</h5>
+            <h5 class="text-white font-weight-bold mt-3 mb-2">Verified Architecture & Core Capabilities</h5>
             <ul style="color: #cbd5e1; line-height: 1.9; padding-left: 20px;">
               ${p.features.map(f => `<li>${f}</li>`).join("")}
             </ul>
           </div>
-          <div class="modal-footer" style="border-top: 1px solid rgba(255, 255, 255, 0.1);">
-            ${p.Previewlink ? `<a href="${p.Previewlink}" target="_blank" rel="noopener noreferrer" class="btn btn-info" style="background: #0284c7; border: none;"><i class="fas fa-external-link-alt mr-1"></i>Open Live Application</a>` : ``}
-            ${p.Githublink ? `<a href="${p.Githublink}" target="_blank" rel="noopener noreferrer" class="btn btn-outline-light"><i class="fab fa-github mr-1"></i>Source Code</a>` : ``}
+          <div class="modal-footer" style="border-top: 1px solid rgba(255, 255, 255, 0.08); background: #0c1424; border-bottom-left-radius: 16px; border-bottom-right-radius: 16px;">
+            ${p.Previewlink ? `<a href="${p.Previewlink}" target="_blank" rel="noopener noreferrer" class="btn btn-info" style="background: linear-gradient(135deg, #0284c7, #2563eb); border: none; font-weight: 600;"><i class="fas fa-external-link-alt mr-1"></i>Launch Application</a>` : ``}
+            ${p.Githublink ? `<a href="${p.Githublink}" target="_blank" rel="noopener noreferrer" class="btn btn-outline-light" style="font-weight: 500;"><i class="fab fa-github mr-1"></i>Source Code</a>` : ``}
             <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
           </div>
         </div>

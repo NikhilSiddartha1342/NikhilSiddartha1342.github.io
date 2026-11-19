@@ -35,6 +35,7 @@
     <link rel="stylesheet" href="assets/css/contact.css">
     <link rel="stylesheet" type="text/css" href="assets/css/style.css">
     <link rel="stylesheet" href="assets/css/cursor.css">
+    <link rel="stylesheet" href="assets/css/developer-experience.css">
 
     <!-- Font Awesome Icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -143,67 +144,92 @@
     <div style="position: relative; z-index: 2;">
 
         <!-- 1. HERO SECTION -->
-        <section class="hero-section text-center">
+        <section class="hero-section text-left" style="min-height: 90vh; padding: 120px 0 60px 0;">
             <div class="container">
-                <!-- Profile Image -->
-                <div class="hero-dp-wrapper">
-                    <img src="assets/images/nikhil_profile.jpg" alt="Pinninti Varaha Siddartha Nikhil" class="hero-dp-img">
-                </div>
+                <div class="hero-workspace-grid">
+                    <!-- Left: Profile & Introduction -->
+                    <div class="hero-intro-column">
+                        <div class="hero-status-pill">
+                            <span class="status-dot-pulse"></span>
+                            <span>Interactive Engineer – From Code to Intelligence</span>
+                        </div>
 
-                <!-- Intro Greeting -->
-                <h1 class="hero-title-name">
-                    Hi <span class="wave"><img src="assets/images/Hand.gif" width="36px" alt="Waving Hand"></span>, I'm <span class="highlight">Pinninti Varaha Siddartha Nikhil</span>
-                </h1>
+                        <!-- Animated Name Reveal -->
+                        <h1 class="hero-title-name mb-3" style="font-size: 2.6rem; font-weight: 800; line-height: 1.25;">
+                            Hi <span class="wave"><img src="assets/images/Hand.gif" width="36px" alt="Waving Hand"></span>, I'm <br>
+                            <span class="highlight hero-animated-name" data-name="Pinninti Varaha Siddartha Nikhil">Pinninti Varaha Siddartha Nikhil</span>
+                        </h1>
 
-                <!-- Professional Headline -->
-                <div class="hero-subtitle-headline">
-                    Software Development Engineer | Competitive Programmer | Full Stack Developer
-                </div>
+                        <!-- Professional Rotating Headline -->
+                        <div class="hero-subtitle-headline mb-3" style="color: #38bdf8; font-size: 1.15rem; font-weight: 600;">
+                            Software Development Engineer | Competitive Programmer | Full Stack Developer | AI/ML Enthusiast
+                        </div>
 
-                <!-- Short Introduction -->
-                <p class="hero-intro-lead">
-                    I am a Computer Science and Engineering student passionate about software development, competitive programming, and building intelligent applications using modern technologies.
-                </p>
+                        <p class="hero-intro-lead mb-4" style="color: #94a3b8; font-size: 1.02rem; line-height: 1.8; max-width: 580px;">
+                            B.Tech Computer Science student at GRIET Hyderabad (CGPA 9.11/10) with 1000+ LeetCode problems solved. Designing resilient distributed backend architectures, computer vision telemetry, and modern agentic intelligence.
+                        </p>
 
-                <!-- Animated Rotating Text -->
-                <div class="hero-rotating-box">
-                    <span>Focused on:</span>
-                    <span class="animated-text" data-words="Software Development, Competitive Programming, Full Stack Development, AI/ML"></span>
-                </div>
+                        <!-- Rotating Focus Pill -->
+                        <div class="hero-rotating-box mb-4 text-left" style="display: inline-flex; align-items: center; gap: 8px; background: rgba(15, 23, 42, 0.7); border: 1px solid rgba(56, 189, 248, 0.25); border-radius: 8px; padding: 6px 14px; font-family: 'Fira Code', monospace; font-size: 0.88rem;">
+                            <span style="color: #64ffda;">Focus:</span>
+                            <span class="animated-text" data-words="Software Development Engineer, Competitive Programmer, Full Stack Developer, AI/ML Developer"></span>
+                        </div>
 
-                <!-- Action Buttons -->
-                <div class="hero-btn-group">
-                    <a href="assets/docs/Nikhil_Siddartha_Resume.pdf" target="_blank" download="Nikhil_Siddartha_Resume.pdf" class="hero-btn hero-btn-primary">
-                        <i class="fas fa-file-download"></i> Download Resume
-                    </a>
-                    <a href="projects.html" class="hero-btn hero-btn-secondary">
-                        <i class="fas fa-laptop-code"></i> View Projects
-                    </a>
-                    <a href="#contact" class="hero-btn hero-btn-outline">
-                        <i class="fas fa-envelope"></i> Contact Me
-                    </a>
-                </div>
+                        <!-- Action Buttons -->
+                        <div class="d-flex flex-wrap align-items-center mb-4" style="gap: 12px;">
+                            <a href="projects.html" class="magnetic-btn magnetic-btn-primary">
+                                <i class="fas fa-laptop-code"></i> View Projects
+                            </a>
+                            <a href="assets/docs/Nikhil_Siddartha_Resume.pdf" target="_blank" download="Nikhil_Siddartha_Resume.pdf" class="magnetic-btn magnetic-btn-secondary">
+                                <i class="fas fa-file-download"></i> Download Resume
+                            </a>
+                            <a href="#contact" class="magnetic-btn magnetic-btn-outline">
+                                <i class="fas fa-envelope"></i> Contact Me
+                            </a>
+                        </div>
 
-                <!-- Social Links Row -->
-                <div class="d-flex justify-content-center flex-wrap mt-3" style="gap: 14px;">
-                    <a class="social-button-custom github-btn" href="https://github.com/NikhilSiddartha1342" target="_blank" rel="noopener noreferrer" title="GitHub Profile">
-                        <i class="fab fa-github"></i>
-                    </a>
-                    <a class="social-button-custom linkedin-btn" href="https://www.linkedin.com/in/nikhil-siddartha-7347b532b/" target="_blank" rel="noopener noreferrer" title="LinkedIn Profile">
-                        <i class="fab fa-linkedin-in"></i>
-                    </a>
-                    <a class="social-button-custom leetcode-btn" href="https://leetcode.com/u/nikhilsiddarthaa21/" target="_blank" rel="noopener noreferrer" title="LeetCode (2000+ Rating | 1000+ Solved)">
-                        <i class="fas fa-code"></i>
-                    </a>
-                    <a class="social-button-custom hackerrank-btn" href="https://www.hackerrank.com/profile/23241a05a7vsn" target="_blank" rel="noopener noreferrer" title="HackerRank Profile">
-                        <i class="fab fa-hackerrank"></i>
-                    </a>
-                    <a class="social-button-custom gfg-btn" href="https://www.geeksforgeeks.org/profile/siddartha2rgl6" target="_blank" rel="noopener noreferrer" title="GeeksforGeeks Profile">
-                        <i class="fas fa-laptop-code"></i>
-                    </a>
-                    <a class="social-button-custom mail-btn" href="mailto:nikhilsiddartha21@gmail.com" title="Direct Email">
-                        <i class="fas fa-envelope"></i>
-                    </a>
+                        <!-- Social Profile Icons -->
+                        <div class="d-flex flex-wrap" style="gap: 12px;">
+                            <a class="social-button-custom github-btn" href="https://github.com/NikhilSiddartha1342" target="_blank" rel="noopener noreferrer" title="GitHub Profile">
+                                <i class="fab fa-github"></i>
+                            </a>
+                            <a class="social-button-custom linkedin-btn" href="https://www.linkedin.com/in/nikhil-siddartha-7347b532b/" target="_blank" rel="noopener noreferrer" title="LinkedIn Profile">
+                                <i class="fab fa-linkedin-in"></i>
+                            </a>
+                            <a class="social-button-custom leetcode-btn" href="https://leetcode.com/u/nikhilsiddarthaa21/" target="_blank" rel="noopener noreferrer" title="LeetCode (2000+ Rating | 1000+ Solved)">
+                                <i class="fas fa-code"></i>
+                            </a>
+                            <a class="social-button-custom hackerrank-btn" href="https://www.hackerrank.com/profile/23241a05a7vsn" target="_blank" rel="noopener noreferrer" title="HackerRank Profile">
+                                <i class="fab fa-hackerrank"></i>
+                            </a>
+                            <a class="social-button-custom gfg-btn" href="https://www.geeksforgeeks.org/profile/siddartha2rgl6" target="_blank" rel="noopener noreferrer" title="GeeksforGeeks Profile">
+                                <i class="fas fa-laptop-code"></i>
+                            </a>
+                            <a class="social-button-custom mail-btn" href="mailto:nikhilsiddartha21@gmail.com" title="Direct Email">
+                                <i class="fas fa-envelope"></i>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Right: Interactive Floating Code Terminal Window -->
+                    <div class="hero-terminal-column">
+                        <div class="hero-code-terminal">
+                            <div class="terminal-titlebar">
+                                <div class="terminal-dots">
+                                    <span class="terminal-dot close"></span>
+                                    <span class="terminal-dot minimize"></span>
+                                    <span class="terminal-dot maximize"></span>
+                                </div>
+                                <div class="terminal-filename">
+                                    <i class="fab fa-java text-warning mr-1"></i> BinarySearchEngine.java
+                                </div>
+                                <span class="terminal-lang-badge">Java 21</span>
+                            </div>
+                            <div class="terminal-code-body" id="heroTypingCode">
+                                <!-- Populated dynamically by developer-experience.js with typing animation -->
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
@@ -579,6 +605,55 @@
             </div>
         </section>
 
+        <!-- 5. INTERACTIVE DEVELOPER TERMINAL SECTION -->
+        <section id="terminal" class="cli-terminal-section" style="background: rgba(8, 13, 24, 0.85); border-top: 1px solid rgba(255, 255, 255, 0.06); border-bottom: 1px solid rgba(255, 255, 255, 0.06);">
+            <div class="container py-4">
+                <div class="text-center mb-4">
+                    <span class="badge" style="background: rgba(56, 189, 248, 0.12); color: #38bdf8; border: 1px solid rgba(56, 189, 248, 0.3); padding: 6px 14px; border-radius: 20px; font-size: 0.82rem; font-weight: 600;">
+                        <i class="fas fa-terminal mr-1"></i> Interactive Console
+                    </span>
+                    <h2 class="section-title mt-2">Explore My Portfolio <span class="accent">Through Terminal</span></h2>
+                    <p class="section-desc" style="max-width: 650px; margin: 0 auto;">Type developer commands or click quick chips below to inspect systems, competencies, and achievements.</p>
+                </div>
+
+                <div class="cli-terminal-window">
+                    <div class="cli-titlebar">
+                        <div class="terminal-dots">
+                            <span class="terminal-dot close"></span>
+                            <span class="terminal-dot minimize"></span>
+                            <span class="terminal-dot maximize"></span>
+                        </div>
+                        <div class="cli-title-text">
+                            <i class="fas fa-laptop-code text-info"></i> nikhil@portfolio:~$ (zsh)
+                        </div>
+                        <span style="font-size: 0.75rem; color: #64748b;">v2.6.4</span>
+                    </div>
+
+                    <div class="cli-screen" id="cliTerminalOutput">
+                        <div style="color: #64ffda; margin-bottom: 6px;">Welcome to Pinninti Varaha Siddartha Nikhil's Interactive Terminal!</div>
+                        <div style="color: #94a3b8; margin-bottom: 12px;">Type <strong style="color: #38bdf8;">help</strong> to see the list of available commands or click a chip below.</div>
+                    </div>
+
+                    <div class="cli-prompt-line px-4 pb-3" style="background: #060b14;">
+                        <span class="cli-prompt-user">nikhil</span><span style="color:#64748b">@</span><span class="cli-prompt-path">portfolio</span><span class="cli-prompt-symbol">:~$</span>
+                        <input type="text" id="cliTerminalInput" class="cli-input-field" placeholder="type 'help', 'projects', 'skills'..." autocomplete="off" spellcheck="false" aria-label="Terminal Input">
+                    </div>
+
+                    <div class="cli-quick-commands">
+                        <span style="font-size: 0.75rem; color: #64748b; display: flex; align-items: center; margin-right: 4px;">Quick Run:</span>
+                        <button type="button" class="cli-quick-chip" data-cmd="about">about</button>
+                        <button type="button" class="cli-quick-chip" data-cmd="skills">skills</button>
+                        <button type="button" class="cli-quick-chip" data-cmd="projects">projects</button>
+                        <button type="button" class="cli-quick-chip" data-cmd="achievements">achievements</button>
+                        <button type="button" class="cli-quick-chip" data-cmd="education">education</button>
+                        <button type="button" class="cli-quick-chip" data-cmd="contact">contact</button>
+                        <button type="button" class="cli-quick-chip" data-cmd="resume">resume</button>
+                        <button type="button" class="cli-quick-chip" data-cmd="clear">clear</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
     </div>
 
     <!-- Dynamic footer section injected by app.js -->
@@ -592,6 +667,7 @@
     <script src="assets/js/config.js"></script>
     <script src="assets/js/app.js"></script>
     <script src="assets/js/cursor.js"></script>
+    <script src="assets/js/developer-experience.js"></script>
 </body>
 
 </html>
