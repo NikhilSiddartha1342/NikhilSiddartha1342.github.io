@@ -43,7 +43,7 @@
 | **Speak-Up** | React, WebRTC, Node.js, Socket.io | Interactive speech evaluation platform featuring real-time audio rooms and latency-optimized telemetry. | [Live Demo](https://speak-up-studio-gules.vercel.app/) • [GitHub](https://github.com/NikhilSiddartha1342/Speak-Up) |
 | **Wanderlust** | Node.js, Express, MongoDB, Mapbox | Full-stack vacation rental marketplace implementing MVC architecture, geocoding, authentication, and reviews. | [GitHub](https://github.com/NikhilSiddartha1342/Wanderlust) |
 | **Stress Predictor** | Python, Scikit-Learn, Flask | Predictive health analytics pipeline correlating biometric and lifestyle telemetry with stress tiers. | [GitHub](https://github.com/NikhilSiddartha1342/Stress-Predictor) |
-| **TechDoctor** | Python, Machine Learning, Streamlit | Intelligent medical diagnostic assistant mapping patient symptoms to probable conditions and treatments. | [GitHub](https://github.com/NikhilSiddartha1342/TechDoctor) |
+| **TechDoctor** | Python, Machine Learning, Streamlit | Intelligent medical diagnostic assistant mapping patient symptoms to probable conditions and treatments. | [GitHub](https://github.com/NikhilSiddartha1342/Tech-Doctor) |
 
 ---
 

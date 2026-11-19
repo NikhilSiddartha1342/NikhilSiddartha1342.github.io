@@ -143,7 +143,7 @@ const projects = [
       "Interactive Flask web dashboard with real-time prediction responses"
     ],
     category: "ML",
-    Githublink: "https://github.com/NikhilSiddartha1342",
+    Githublink: "https://github.com/NikhilSiddartha1342/Stress-Predictor",
     Previewlink: ""
   },
   {
@@ -163,7 +163,7 @@ const projects = [
       "Futuristic cyberpunk UI crafted with custom SVG anatomical overlays and Framer Motion transitions"
     ],
     category: "FullStack",
-    Githublink: "https://github.com/NikhilSiddartha1342",
+    Githublink: "https://github.com/NikhilSiddartha1342/Tech-Doctor",
     Previewlink: ""
   }
 ];

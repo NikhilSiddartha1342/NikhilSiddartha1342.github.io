@@ -485,8 +485,8 @@
           4. <strong style="color: #ffffff;">Speak-Up</strong> – AI Speech Evaluation Platform with WebRTC Practice Rooms<br>
           5. <strong style="color: #ffffff;">ShaktiAI</strong> – Grassroots Multilingual Entrepreneur Platform<br>
           6. <strong style="color: #ffffff;">Wanderlust</strong> – Airbnb Architecture Full-Stack Listing Marketplace<br>
-          7. <strong style="color: #ffffff;">Stress Predictor</strong> – Activity Data Stress ML Engine (RandomForest)<br>
-          8. <strong style="color: #ffffff;">TechDoctor</strong> – Gamified Cyber-Healthcare Diagnostic System
+          7. <strong style="color: #ffffff;">Stress Predictor</strong> – Activity Data Stress ML Engine (RandomForest) (<a href="https://github.com/NikhilSiddartha1342/Stress-Predictor" target="_blank" style="color: #38bdf8;">GitHub</a>)<br>
+          8. <strong style="color: #ffffff;">TechDoctor</strong> – Gamified Cyber-Healthcare Diagnostic System (<a href="https://github.com/NikhilSiddartha1342/Tech-Doctor" target="_blank" style="color: #38bdf8;">GitHub</a>)
         </div>`,
 
       achievements: () => `
