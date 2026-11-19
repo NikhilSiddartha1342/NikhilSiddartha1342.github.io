@@ -89,6 +89,8 @@
           nameContainer.appendChild(document.createTextNode(" "));
         }
       });
+      // Safety fallback: ensure text opacity is guaranteed visible
+      nameContainer.style.opacity = "1";
     }
 
     // B. Hero Interactive Coding Terminal (Realistic Java Binary Search Algorithm)

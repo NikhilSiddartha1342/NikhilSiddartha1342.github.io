@@ -108,13 +108,13 @@ const featuredAchievements = [
     badgeLabel: "Elite + Gold | Top 1%",
     badgeType: "badge-gold",
     year: "2025",
-    image: "assets/certificates/thumbnails/thumb_nptel_data_science.png",
-    documentUrl: "assets/certificates/featured/NPTEL_Data_Science.pdf",
+    image: "assets/Certificates/thumbnails/thumb_nptel_data_science.png",
+    documentUrl: "assets/Certificates/featured/NPTEL_Data_Science.pdf",
     previewType: "pdf",
     metricLabel: "Score & Recognition",
     metricValue: "88% Score | Elite + Gold",
     description: "Secured Elite + Gold certification from IIT Madras & NPTEL with an 88% overall score, ranking in the Top 1% nationally among thousands of engineering participants.",
-    officialUrl: "assets/certificates/featured/NPTEL_Data_Science.pdf",
+    officialUrl: "assets/Certificates/featured/NPTEL_Data_Science.pdf",
     officialBtnText: "View Verified Certificate",
     categories: ["all", "academic", "certifications"]
   },
@@ -171,8 +171,8 @@ const hackerrankCertifications = [
     issuer: "HackerRank",
     badge: "Intermediate",
     badgeType: "badge-green",
-    image: "assets/certificates/thumbnails/thumb_hackerrank_intermediate.png",
-    pdfUrl: "assets/certificates/hackerrank/problem_solving_intermediate_certificate.pdf",
+    image: "assets/Certificates/thumbnails/thumb_hackerrank_intermediate.png",
+    pdfUrl: "assets/Certificates/Hackerrank/problem_solving_intermediate_certificate.pdf",
     verifyUrl: "https://www.hackerrank.com/profile/23241a05a7vsn",
     desc: "Covers complex algorithms including Dynamic Programming, Trees, Graph Theory, and advanced problem-solving techniques.",
     categories: ["all", "certifications", "competitive-programming"]
@@ -182,8 +182,8 @@ const hackerrankCertifications = [
     issuer: "HackerRank",
     badge: "Basic Verified",
     badgeType: "badge-green",
-    image: "assets/certificates/thumbnails/thumb_hackerrank_ps_basic.png",
-    pdfUrl: "assets/certificates/hackerrank/problem_solving_basic_certificate.pdf",
+    image: "assets/Certificates/thumbnails/thumb_hackerrank_ps_basic.png",
+    pdfUrl: "assets/Certificates/Hackerrank/problem_solving_basic_certificate.pdf",
     verifyUrl: "https://www.hackerrank.com/profile/23241a05a7vsn",
     desc: "Validates proficiency in fundamental data structures, sorting algorithms, searching, and time complexity estimation.",
     categories: ["all", "certifications", "competitive-programming"]
@@ -193,8 +193,8 @@ const hackerrankCertifications = [
     issuer: "HackerRank",
     badge: "Java Verified",
     badgeType: "badge-green",
-    image: "assets/certificates/thumbnails/thumb_hackerrank_java_basic.png",
-    pdfUrl: "assets/certificates/hackerrank/java_basic_certificate.pdf",
+    image: "assets/Certificates/thumbnails/thumb_hackerrank_java_basic.png",
+    pdfUrl: "assets/Certificates/Hackerrank/java_basic_certificate.pdf",
     verifyUrl: "https://www.hackerrank.com/profile/23241a05a7vsn",
     desc: "Demonstrates core Java mastery, Object-Oriented Programming, Exception Handling, Collections Framework, and Streams.",
     categories: ["all", "certifications"]
@@ -204,8 +204,8 @@ const hackerrankCertifications = [
     issuer: "HackerRank",
     badge: "Python Verified",
     badgeType: "badge-green",
-    image: "assets/certificates/thumbnails/thumb_hackerrank_python_basic.png",
-    pdfUrl: "assets/certificates/hackerrank/python_basic_certificate.pdf",
+    image: "assets/Certificates/thumbnails/thumb_hackerrank_python_basic.png",
+    pdfUrl: "assets/Certificates/Hackerrank/python_basic_certificate.pdf",
     verifyUrl: "https://www.hackerrank.com/profile/23241a05a7vsn",
     desc: "Verifies Python core competencies including functional idioms, data structures, strings, and OOP implementations.",
     categories: ["all", "certifications"]
@@ -220,8 +220,8 @@ const featuredCertifications = [
     year: "2025",
     badge: "AI Agents",
     badgeType: "badge-cyan",
-    image: "assets/certificates/featured/Ai-Agents(Sales-Force_GFG).png",
-    documentUrl: "assets/certificates/featured/Ai-Agents(Sales-Force_GFG).png",
+    image: "assets/Certificates/featured/Ai-Agents(Sales-Force_GFG).png",
+    documentUrl: "assets/Certificates/featured/Ai-Agents(Sales-Force_GFG).png",
     previewType: "image",
     desc: "Advanced training in building autonomous AI agents, tool integration, multimodal reasoning, and enterprise AI workflows with Salesforce and GFG.",
     categories: ["all", "certifications"]
@@ -232,8 +232,8 @@ const featuredCertifications = [
     year: "Certified",
     badge: "Intermediate",
     badgeType: "badge-green",
-    image: "assets/certificates/thumbnails/thumb_hackerrank_intermediate.png",
-    documentUrl: "assets/certificates/featured/problem_solving_intermediate_certificate.pdf",
+    image: "assets/Certificates/thumbnails/thumb_hackerrank_intermediate.png",
+    documentUrl: "assets/Certificates/featured/problem_solving_intermediate_certificate.pdf",
     previewType: "pdf",
     desc: "Demonstrated advanced algorithmic proficiency, time complexity optimization, and memory-efficient data structures.",
     categories: ["all", "certifications", "competitive-programming"]
@@ -244,8 +244,8 @@ const featuredCertifications = [
     year: "Score: 70%",
     badge: "IIT Bombay",
     badgeType: "badge-purple",
-    image: "assets/certificates/thumbnails/thumb_python_iitb.png",
-    documentUrl: "assets/certificates/featured/Python-IITB-PVSN.pdf",
+    image: "assets/Certificates/thumbnails/thumb_python_iitb.png",
+    documentUrl: "assets/Certificates/featured/Python-IITB-PVSN.pdf",
     previewType: "pdf",
     desc: "Comprehensive certification by IIT Bombay Spoken Tutorial Project following remote proctored examination.",
     categories: ["all", "certifications", "academic"]
@@ -256,8 +256,8 @@ const featuredCertifications = [
     year: "2025 (Valid to 2027)",
     badge: "OCI Certified",
     badgeType: "badge-orange",
-    image: "assets/certificates/thumbnails/thumb_oracle_genai.png",
-    documentUrl: "assets/certificates/featured/OracleGENAIProfessional.pdf",
+    image: "assets/Certificates/thumbnails/thumb_oracle_genai.png",
+    documentUrl: "assets/Certificates/featured/OracleGENAIProfessional.pdf",
     previewType: "pdf",
     desc: "Professional certification validating LLM architectures, prompt engineering, RAG pipelines, fine-tuning, and OCI GenAI services.",
     categories: ["all", "certifications"]
@@ -268,8 +268,8 @@ const featuredCertifications = [
     year: "Score: 88% | Top 1%",
     badge: "Top 1% Elite+Gold",
     badgeType: "badge-gold",
-    image: "assets/certificates/thumbnails/thumb_nptel_data_science.png",
-    documentUrl: "assets/certificates/featured/NPTEL_Data_Science.pdf",
+    image: "assets/Certificates/thumbnails/thumb_nptel_data_science.png",
+    documentUrl: "assets/Certificates/featured/NPTEL_Data_Science.pdf",
     previewType: "pdf",
     desc: "Secured top 1% national rank in IIT Madras Data Science curriculum covering linear algebra, statistical hypothesis testing, and ML modeling.",
     categories: ["all", "certifications", "academic"]
@@ -296,8 +296,8 @@ const additionalCertifications = [
     year: "July 2025",
     badge: "OCI Associate",
     badgeType: "badge-orange",
-    image: "assets/certificates/thumbnails/thumb_oracle_ai_foundations.png",
-    pdfUrl: "assets/certificates/oracle/OracleAIFOUNDATIONSassociate.pdf",
+    image: "assets/Certificates/thumbnails/thumb_oracle_ai_foundations.png",
+    pdfUrl: "assets/Certificates/ORACLE/OracleAIFOUNDATIONSassociate.pdf",
     desc: "Foundational AI/ML concepts, computer vision, natural language processing, and automated machine learning on Oracle Cloud."
   },
   {
@@ -306,8 +306,8 @@ const additionalCertifications = [
     year: "October 2025",
     badge: "OCI Professional",
     badgeType: "badge-orange",
-    image: "assets/certificates/thumbnails/thumb_oracle_data_science.png",
-    pdfUrl: "assets/certificates/oracle/Data_Science_Professional.pdf",
+    image: "assets/Certificates/thumbnails/thumb_oracle_data_science.png",
+    pdfUrl: "assets/Certificates/ORACLE/Data_Science_Professional.pdf",
     desc: "End-to-end data science lifecycle, OCI Data Science service, model cataloging, deployment, and MLOps practices."
   },
   {
@@ -316,8 +316,8 @@ const additionalCertifications = [
     year: "Score: 84% (12 Weeks)",
     badge: "NPTEL Certified",
     badgeType: "badge-gold",
-    image: "assets/certificates/thumbnails/thumb_nptel_data_analytics.png",
-    pdfUrl: "assets/certificates/nptel/NPTEL_Data_Analytics.pdf",
+    image: "assets/Certificates/thumbnails/thumb_nptel_data_analytics.png",
+    pdfUrl: "assets/Certificates/nptel/NPTEL_Data_Analytics.pdf",
     desc: "12-week comprehensive program covering exploratory data analysis, Pandas, NumPy, statistical inferences, and regression."
   },
   {
@@ -326,8 +326,8 @@ const additionalCertifications = [
     year: "May 2026",
     badge: "Cisco Certified",
     badgeType: "badge-cyan",
-    image: "assets/certificates/thumbnails/thumb_cisco_data_analytics.png",
-    pdfUrl: "assets/certificates/cisco/Cisco_Data_Analytics_Essentials.pdf",
+    image: "assets/Certificates/thumbnails/thumb_cisco_data_analytics.png",
+    pdfUrl: "assets/Certificates/CISCO/Cisco_Data_Analytics_Essentials.pdf",
     desc: "Data collection, statistical analysis, visualization, and data-driven decision making pipelines."
   },
   {
@@ -336,8 +336,8 @@ const additionalCertifications = [
     year: "Verified",
     badge: "Cisco AI",
     badgeType: "badge-cyan",
-    image: "assets/certificates/thumbnails/thumb_cisco_modern_ai.png",
-    pdfUrl: "assets/certificates/cisco/Cisco_Introduction_to_Modern_AI.pdf",
+    image: "assets/Certificates/thumbnails/thumb_cisco_modern_ai.png",
+    pdfUrl: "assets/Certificates/CISCO/Cisco_Introduction_to_Modern_AI.pdf",
     desc: "Modern AI paradigms, neural networks, ethics in artificial intelligence, and applied intelligent systems."
   },
   {
@@ -346,8 +346,8 @@ const additionalCertifications = [
     year: "Verified",
     badge: "Applied AI",
     badgeType: "badge-cyan",
-    image: "assets/certificates/thumbnails/thumb_cisco_apply_ai.png",
-    pdfUrl: "assets/certificates/cisco/Cisco_Apply_AI_Analyze_Customer_Reviews.pdf",
+    image: "assets/Certificates/thumbnails/thumb_cisco_apply_ai.png",
+    pdfUrl: "assets/Certificates/CISCO/Cisco_Apply_AI_Analyze_Customer_Reviews.pdf",
     desc: "Applied natural language processing and sentiment analysis to extract intelligence from unstructured consumer feedback."
   },
   {
@@ -356,8 +356,8 @@ const additionalCertifications = [
     year: "Verified",
     badge: "Python Certified",
     badgeType: "badge-cyan",
-    image: "assets/certificates/thumbnails/thumb_cisco_python_1.png",
-    pdfUrl: "assets/certificates/cisco/Cisco_Python_Essentials_1.pdf",
+    image: "assets/Certificates/thumbnails/thumb_cisco_python_1.png",
+    pdfUrl: "assets/Certificates/CISCO/Cisco_Python_Essentials_1.pdf",
     desc: "Fundamentals of computer programming, variables, control flow, functions, lists, and algorithm logic in Python."
   },
   {
@@ -366,8 +366,8 @@ const additionalCertifications = [
     year: "Verified",
     badge: "Python Advanced",
     badgeType: "badge-cyan",
-    image: "assets/certificates/thumbnails/thumb_cisco_python_2.png",
-    pdfUrl: "assets/certificates/cisco/Cisco_Python_Essentials_2.pdf",
+    image: "assets/Certificates/thumbnails/thumb_cisco_python_2.png",
+    pdfUrl: "assets/Certificates/CISCO/Cisco_Python_Essentials_2.pdf",
     desc: "Advanced modules, packages, string methods, object-oriented programming, and file stream handling."
   },
   {
@@ -376,8 +376,8 @@ const additionalCertifications = [
     year: "Networking",
     badge: "Cisco CCNA",
     badgeType: "badge-cyan",
-    image: "assets/certificates/thumbnails/thumb_cisco_ccna1.png",
-    pdfUrl: "assets/certificates/cisco/Cisco_CCNA_Introduction_to_Networks.pdf",
+    image: "assets/Certificates/thumbnails/thumb_cisco_ccna1.png",
+    pdfUrl: "assets/Certificates/CISCO/Cisco_CCNA_Introduction_to_Networks.pdf",
     desc: "Network architecture, IP addressing schemes (IPv4/IPv6), Ethernet, and foundational transport layer protocols."
   },
   {
@@ -386,8 +386,8 @@ const additionalCertifications = [
     year: "Networking",
     badge: "Cisco CCNA",
     badgeType: "badge-cyan",
-    image: "assets/certificates/thumbnails/thumb_cisco_ccna2.png",
-    pdfUrl: "assets/certificates/cisco/Cisco_CCNA_Switching_Routing_and_Wireless_Essentials.pdf",
+    image: "assets/Certificates/thumbnails/thumb_cisco_ccna2.png",
+    pdfUrl: "assets/Certificates/CISCO/Cisco_CCNA_Switching_Routing_and_Wireless_Essentials.pdf",
     desc: "VLANs, inter-VLAN routing, STP, EtherChannel, DHCP, SLAAC, and wireless LAN configuration."
   },
   {
@@ -396,8 +396,8 @@ const additionalCertifications = [
     year: "Networking",
     badge: "Cisco CCNA",
     badgeType: "badge-cyan",
-    image: "assets/certificates/thumbnails/thumb_cisco_ccna3.png",
-    pdfUrl: "assets/certificates/cisco/Cisco_CCNA_Enterprise_Networking_Security_and_Automation.pdf",
+    image: "assets/Certificates/thumbnails/thumb_cisco_ccna3.png",
+    pdfUrl: "assets/Certificates/CISCO/Cisco_CCNA_Enterprise_Networking_Security_and_Automation.pdf",
     desc: "OSPFv2, network security concepts, ACLs, NAT, VPNs, QoS, network virtualization, and automation."
   },
   {
@@ -406,8 +406,8 @@ const additionalCertifications = [
     year: "Dec 2023",
     badge: "AWS Graduate",
     badgeType: "badge-orange",
-    image: "assets/certificates/thumbnails/thumb_aws_foundations.png",
-    pdfUrl: "assets/certificates/aws/AWS_Academy_Cloud_Foundations.pdf",
+    image: "assets/Certificates/thumbnails/thumb_aws_foundations.png",
+    pdfUrl: "assets/Certificates/aws/AWS_Academy_Cloud_Foundations.pdf",
     desc: "Detailed overview of cloud concepts, AWS core services, security, architecture, pricing, and support."
   },
   {
@@ -416,8 +416,8 @@ const additionalCertifications = [
     year: "Dec 2023",
     badge: "AWS Architect",
     badgeType: "badge-orange",
-    image: "assets/certificates/thumbnails/thumb_aws_architecting.png",
-    pdfUrl: "assets/certificates/aws/AWS_Academy_Cloud_Architecting.pdf",
+    image: "assets/Certificates/thumbnails/thumb_aws_architecting.png",
+    pdfUrl: "assets/Certificates/aws/AWS_Academy_Cloud_Architecting.pdf",
     desc: "Architecting resilient, high-performing, secure, and cost-optimized infrastructure on AWS."
   },
   {
@@ -426,8 +426,8 @@ const additionalCertifications = [
     year: "Jan 2026 (Valid 2027)",
     badge: "Google Certified",
     badgeType: "badge-gold",
-    image: "assets/certificates/thumbnails/thumb_google_analytics.png",
-    pdfUrl: "assets/certificates/other/Google_Analytics_Certification.pdf",
+    image: "assets/Certificates/thumbnails/thumb_google_analytics.png",
+    pdfUrl: "assets/Certificates/other/Google_Analytics_Certification.pdf",
     desc: "Official certification in Google Analytics 4 (GA4) covering web tracking, audience segmentation, and attribution models."
   },
   {
@@ -436,8 +436,8 @@ const additionalCertifications = [
     year: "Nov 2025",
     badge: "Deloitte",
     badgeType: "badge-green",
-    image: "assets/certificates/thumbnails/thumb_deloitte_cyber.png",
-    pdfUrl: "assets/certificates/other/Deloitte_Cybersecurity_Job_Simulation.pdf",
+    image: "assets/Certificates/thumbnails/thumb_deloitte_cyber.png",
+    pdfUrl: "assets/Certificates/Deliotte/Deloitte-Forage-Job Simulation.pdf",
     desc: "Practical simulation tackling security assessments, vulnerability remediation, and enterprise threat analysis."
   },
   {
@@ -446,8 +446,8 @@ const additionalCertifications = [
     year: "April 2026",
     badge: "ServiceNow",
     badgeType: "badge-purple",
-    image: "assets/certificates/thumbnails/thumb_servicenow.png",
-    pdfUrl: "assets/certificates/other/ServiceNow_Virtual_Internship.pdf",
+    image: "assets/Certificates/thumbnails/thumb_servicenow.png",
+    pdfUrl: "assets/Certificates/other/ServiceNow_Virtual_Internship.pdf",
     desc: "Hands-on virtual internship in ServiceNow platform administration, flows, Automated Test Framework (ATF), and Agentic AI."
   }
 ];
@@ -786,4 +786,5 @@ document.addEventListener("DOMContentLoaded", function() {
   renderFeaturedCertifications("all");
   renderAdditionalCertifications();
 });
+
 

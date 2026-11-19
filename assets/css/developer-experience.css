@@ -90,20 +90,37 @@
   }
 }
 
-/* Character-by-character animated name reveal */
+/* Character-by-character animated name reveal & guaranteed hero name visibility */
+.hero-animated-name {
+  display: inline !important;
+  color: #38bdf8 !important;
+  background: linear-gradient(135deg, #38bdf8 0%, #818cf8 50%, #a855f7 100%) !important;
+  -webkit-background-clip: text !important;
+  -webkit-text-fill-color: transparent !important;
+  opacity: 1 !important;
+}
+
 .char-reveal-container {
   display: inline-block;
+  white-space: nowrap;
 }
 
 .char-reveal-container .char-span {
   display: inline-block;
-  opacity: 0;
-  transform: translateY(18px);
-  animation: charSlideUp 0.5s cubic-bezier(0.2, 0.8, 0.2, 1) forwards;
+  color: #38bdf8;
+  background: linear-gradient(135deg, #38bdf8 0%, #818cf8 50%, #a855f7 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  opacity: 1;
+  animation: charSlideUp 0.55s cubic-bezier(0.2, 0.8, 0.2, 1) both;
 }
 
 @keyframes charSlideUp {
-  to {
+  0% {
+    opacity: 0;
+    transform: translateY(14px);
+  }
+  100% {
     opacity: 1;
     transform: translateY(0);
   }
