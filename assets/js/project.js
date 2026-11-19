@@ -23,7 +23,7 @@ const projects = [
     ],
     category: "AI",
     Githublink: "https://github.com/NikhilSiddartha1342/Racan-Ai",
-    Previewlink: "https://racan-ai.vercel.app/about"
+    Previewlink: "https://racan-ai-rho.vercel.app/"
   },
   {
     id: "awareon",

@@ -479,7 +479,7 @@
       projects: () => `
         <div style="color: #38bdf8; font-weight: 600; margin-bottom: 6px;">Featured Systems & Applications:</div>
         <div style="color: #cbd5e1; line-height: 1.8;">
-          1. <strong style="color: #ffffff;">Racan-AI</strong> – AI Fashion Stylist & Virtual Outfits (<a href="https://racan-ai.vercel.app/about" target="_blank" style="color: #38bdf8;">Live App</a> | <a href="https://github.com/NikhilSiddartha1342/Racan-Ai" target="_blank" style="color: #38bdf8;">GitHub</a>)<br>
+          1. <strong style="color: #ffffff;">Racan-AI</strong> – AI Fashion Stylist & Virtual Outfits (<a href="https://racan-ai-rho.vercel.app/" target="_blank" style="color: #38bdf8;">Live App</a> | <a href="https://github.com/NikhilSiddartha1342/Racan-Ai" target="_blank" style="color: #38bdf8;">GitHub</a>)<br>
           2. <strong style="color: #ffffff;">Awareon</strong> – Real-Time Driver Drowsiness Detection (OpenCV & MediaPipe)<br>
           3. <strong style="color: #ffffff;">PrivaStram</strong> – Multimodal Privacy & Anonymization Pipeline<br>
           4. <strong style="color: #ffffff;">Speak-Up</strong> – AI Speech Evaluation Platform with WebRTC Practice Rooms<br>
