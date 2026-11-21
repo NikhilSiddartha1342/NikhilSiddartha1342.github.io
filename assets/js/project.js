@@ -165,6 +165,26 @@ const projects = [
     category: "FullStack",
     Githublink: "https://github.com/NikhilSiddartha1342/Tech-Doctor",
     Previewlink: ""
+  },
+  {
+    id: "remindr",
+    title: "Remindr",
+    tagline: "AI-Powered Task Intelligence & Kanban Platform",
+    badge: "AI & FullStack",
+    badgeClass: "badge-success",
+    cardImage: "assets/images/project-page/remindr.png",
+    description: "An AI-powered task management and intelligence platform that extracts action items from conversational unstructured text, organizes them into interactive drag-and-drop Kanban workflows, and enables natural language task recall using Google Gemini LLMs.",
+    technologies: ["React 18", "TypeScript", "Node.js", "Express.js", "MongoDB", "Google Gemini AI", "Tailwind CSS", "Zustand", "dnd-kit"],
+    features: [
+      "AI Task Extraction (/extract): Parse unstructured chat transcripts, meeting notes, and messages into structured actionable tasks via LLM",
+      "Intelligent Recall (/recall): Natural language querying of complete task history, deadlines, and project statuses powered by Google Gemini",
+      "Interactive Kanban Board: Drag-and-drop workflow visualization with dnd-kit, priority filters, and real-time status tracking",
+      "Team & Workspace Management: Multi-user collaboration with role assignments and workspace scoping",
+      "Secure Authentication: JWT-based user authentication, protected routes, and bcrypt password hashing"
+    ],
+    category: "AI",
+    Githublink: "https://github.com/NikhilSiddartha1342/Remindr",
+    Previewlink: ""
   }
 ];
 
@@ -319,6 +339,22 @@ window.openProjectModal = function(index) {
           <div class="pipeline-step"><i class="fas fa-palette text-warning mb-1 d-block"></i>Color & Style Match</div>
           <span class="pipeline-arrow"><i class="fas fa-chevron-right"></i></span>
           <div class="pipeline-step"><i class="fas fa-shopping-bag text-success mb-1 d-block"></i>Ranked Outfit Feed</div>
+        </div>
+      </div>`;
+  } else if (p.id === "remindr") {
+    pipelineHtml = `
+      <div class="pipeline-flow-container">
+        <div class="text-uppercase small font-weight-bold mb-2" style="color: #38bdf8; font-size: 0.78rem; letter-spacing: 0.5px;">
+          <i class="fas fa-brain mr-1"></i> Remindr AI Task Extraction & Recall Pipeline:
+        </div>
+        <div class="pipeline-steps">
+          <div class="pipeline-step"><i class="fas fa-comment-dots text-info mb-1 d-block"></i>Chat / Notes Input</div>
+          <span class="pipeline-arrow"><i class="fas fa-chevron-right"></i></span>
+          <div class="pipeline-step active-step"><i class="fas fa-brain text-cyan mb-1 d-block"></i>Gemini /extract</div>
+          <span class="pipeline-arrow"><i class="fas fa-chevron-right"></i></span>
+          <div class="pipeline-step"><i class="fas fa-columns text-warning mb-1 d-block"></i>dnd-kit Kanban Board</div>
+          <span class="pipeline-arrow"><i class="fas fa-chevron-right"></i></span>
+          <div class="pipeline-step active-step"><i class="fas fa-search text-success mb-1 d-block"></i>Gemini /recall Q&A</div>
         </div>
       </div>`;
   }

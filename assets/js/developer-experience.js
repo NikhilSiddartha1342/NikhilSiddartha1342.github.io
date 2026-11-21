@@ -218,7 +218,7 @@
         dist: 0.38,
         desc: "Responsive, stateful & reactive web interfaces",
         skills: ["React.js", "Vite", "HTML5", "CSS3", "Material UI", "Bootstrap"],
-        projects: ["TechDoctor", "Speak-Up", "ShaktiAI"]
+        projects: ["Remindr", "TechDoctor", "Speak-Up", "ShaktiAI"]
       },
       {
         id: "backend",
@@ -229,7 +229,7 @@
         dist: 0.34,
         desc: "High-throughput asynchronous servers & REST architecture",
         skills: ["Node.js", "Express.js", "Flask", "RESTful APIs", "JWT / Auth"],
-        projects: ["Racan-AI", "Wanderlust", "Awareon"]
+        projects: ["Remindr", "Racan-AI", "Wanderlust", "Awareon"]
       },
       {
         id: "databases",
@@ -240,7 +240,7 @@
         dist: 0.36,
         desc: "Relational, document & cloud database stores",
         skills: ["MongoDB", "MySQL", "MongoDB Atlas", "Firebase Firestore", "SQLite"],
-        projects: ["Wanderlust", "Awareon"]
+        projects: ["Remindr", "Wanderlust", "Awareon"]
       },
       {
         id: "aiml",
@@ -251,7 +251,7 @@
         dist: 0.35,
         desc: "Predictive machine learning, Generative AI & Agentic pipelines",
         skills: ["Machine Learning", "Generative AI", "Agentic AI", "NLP", "Scikit-Learn"],
-        projects: ["Racan-AI", "Stress Predictor"]
+        projects: ["Remindr", "Racan-AI", "Stress Predictor"]
       },
       {
         id: "cv",
@@ -486,7 +486,8 @@
           5. <strong style="color: #ffffff;">ShaktiAI</strong> – Grassroots Multilingual Entrepreneur Platform<br>
           6. <strong style="color: #ffffff;">Wanderlust</strong> – Airbnb Architecture Full-Stack Listing Marketplace<br>
           7. <strong style="color: #ffffff;">Stress Predictor</strong> – Activity Data Stress ML Engine (RandomForest) (<a href="https://github.com/NikhilSiddartha1342/Stress-Predictor" target="_blank" style="color: #38bdf8;">GitHub</a>)<br>
-          8. <strong style="color: #ffffff;">TechDoctor</strong> – Gamified Cyber-Healthcare Diagnostic System (<a href="https://github.com/NikhilSiddartha1342/Tech-Doctor" target="_blank" style="color: #38bdf8;">GitHub</a>)
+          8. <strong style="color: #ffffff;">TechDoctor</strong> – Gamified Cyber-Healthcare Diagnostic System (<a href="https://github.com/NikhilSiddartha1342/Tech-Doctor" target="_blank" style="color: #38bdf8;">GitHub</a>)<br>
+          9. <strong style="color: #ffffff;">Remindr</strong> – AI-Powered Task Intelligence & Kanban Platform (<a href="https://github.com/NikhilSiddartha1342/Remindr" target="_blank" style="color: #38bdf8;">GitHub</a>)
         </div>`,
 
       achievements: () => `

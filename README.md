@@ -44,6 +44,7 @@
 | **Wanderlust** | Node.js, Express, MongoDB, Mapbox | Full-stack vacation rental marketplace implementing MVC architecture, geocoding, authentication, and reviews. | [GitHub](https://github.com/NikhilSiddartha1342/Wanderlust) |
 | **Stress Predictor** | Python, Scikit-Learn, Flask | Predictive health analytics pipeline correlating biometric and lifestyle telemetry with stress tiers. | [GitHub](https://github.com/NikhilSiddartha1342/Stress-Predictor) |
 | **TechDoctor** | Python, Machine Learning, Streamlit | Intelligent medical diagnostic assistant mapping patient symptoms to probable conditions and treatments. | [GitHub](https://github.com/NikhilSiddartha1342/Tech-Doctor) |
+| **Remindr** | React, TypeScript, Node.js, Express, MongoDB, Gemini AI | AI-powered task intelligence platform that extracts action items from conversational text and powers interactive Kanban workflows with natural language recall. | [GitHub](https://github.com/NikhilSiddartha1342/Remindr) |
 
 ---
 
